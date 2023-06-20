@@ -1,0 +1,30 @@
+/*=============== ABOUT ===============*/
+.about{
+    position: relative;
+
+    &__container{
+        row-gap: 3.5rem;
+
+        & .section__title{
+            margin-bottom: 1rem;
+        }
+    }
+    &__data{
+        text-align: center;
+    }
+    &__description{
+        margin-bottom: 2rem;
+    }
+    &__img{
+        width: 300px;
+        justify-self: center;
+    }
+    & .shape__small{
+        top: 2rem;
+        right: -3rem;
+    }
+    & .shape__big{
+        bottom: 0;
+        left: -8rem;
+    }
+}

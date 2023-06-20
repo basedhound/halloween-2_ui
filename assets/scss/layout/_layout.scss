@@ -1,0 +1,58 @@
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container{
+    max-width: 1024px;
+    margin-inline: 1.5rem;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section{
+    padding-block: 5rem 1.5rem;
+
+    &__title{
+        font-size: var(--h1-font-size);
+        font-family: var(--second-font);
+        font-weight: initial;
+        line-height: 130%;
+        color: var(--first-color);
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.main{
+    overflow: hidden; /* For animation ScrollReveal */
+}
+
+/* Shapes */
+.shape{
+    &__bg{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        mix-blend-mode: soft-light;
+        opacity: .5;
+        z-index: -1;
+    }
+    &__small,
+    &__big{
+        position: absolute;
+        background-color: var(--first-color);
+        border-radius: 50%;
+        filter: blur(96px);
+        z-index: -2;
+    }
+    &__small{
+        width: 150px;
+        height: 150px;
+    }
+    &__big{
+        width: 250px;
+        height: 250px;
+        opacity: .8;
+    }
+}

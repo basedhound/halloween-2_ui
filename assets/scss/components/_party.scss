@@ -1,0 +1,41 @@
+/*=============== PARTY ===============*/
+.party{
+    position: relative;
+    
+    &__container{
+        row-gap: 5rem;
+
+        & .section__title{
+            margin-bottom: 1rem;
+        }
+    }
+    &__data{
+        text-align: center;
+    }
+    &__description{
+        margin-bottom: 2rem;
+    }
+    &__images{
+        position: relative;
+        justify-self: center;
+    }
+    &__img{
+        width: 250px;
+    }
+    &__star-1,
+    &__star-2{
+        width: 50px;
+        position: absolute;
+        transform: rotate(15deg);
+    }
+    &__star-1{
+        top: -3rem;
+        left: -.5rem;
+        animation: animate-star-1 5s infinite ease-in-out
+    }
+    &__star-2{
+        right: -1.5rem;
+        bottom: 2rem;
+        animation: animate-star-2 5s infinite ease-in-out
+    }
+}

@@ -1,0 +1,97 @@
+/*=============== FOOTER ===============*/
+.footer{
+    position: relative;
+    overflow: hidden;
+
+    &__container{
+        row-gap: 4rem;
+    }
+    &__logo{
+        display: inline-flex;
+        align-items: center;
+        column-gap: .5rem;
+        color: var(--first-color);
+        font-weight: var(--font-medium);
+        margin-bottom: 1.25rem;
+        transition: color .3s;
+
+        & img{
+            width: 20px;
+        }
+        &:hover{
+            color: var(--first-color-alt);
+        }
+    }
+    &__description{
+        font-size: var(--small-font-size);
+    }
+    &__content,
+    &__links{
+        display: grid;
+    }
+    &__content{
+        grid-template-columns: repeat(2, max-content);
+        gap: 2.5rem 4.5rem;
+    }
+    &__title{
+        font-size: var(--h3-font-size);
+        font-weight: var(--font-semi-bold);
+        margin-bottom: 1.5rem;
+    }
+    &__links{
+        row-gap: .75rem;
+    }
+    &__link{
+        color: var(--text-color);
+        font-size: var(--small-font-size);
+        transition: color .3s;
+
+        &:hover{
+            color: var(--first-color);
+        }
+    }
+    &__social{
+        display: flex;
+        column-gap: 1.25rem;
+
+        &-link{
+            color: var(--first-color);
+            font-size: 1.25rem;
+            transition: color .3s, transform .3s;
+
+            &:hover{
+                color: var(--first-color-alt);
+                transform: translateY(-.25rem);
+            }
+        }
+    }
+    &__tree-1,
+    &__tree-2{
+        width: 150px;
+        position: absolute;
+    }
+    &__tree-1{
+        top: 4rem;
+        right: -1.5rem;
+    }
+    &__tree-2{
+        left: -1.5rem;
+        bottom: -.5rem;
+    }
+    &__copy{
+        position: relative;
+        display: block;
+        margin-top: 8rem;
+        font-size: var(--smaller-font-size);
+        text-align: center;
+        color: var(--text-color-light);
+    }
+    & .shape__small{
+        right: -7rem;
+        top: 15rem;
+    }
+    & .shape__big{
+        left: -8rem;
+        bottom: -5rem;
+    }
+}
